@@ -4,12 +4,12 @@ The instructor’s project PDF and eight-category rubric are the reference. This
 
 | Rubric category | Points | Evidence in the final project |
 |---|---:|---|
-| Appropriate dataset, ≥500 observations, goal, cleaning | 10 | Notebook §§1–5; 4,631 development examples and 11 inputs; source audit, session calendar, finite/price/range checks; target definition |
-| Appropriate EDA and descriptive statistics | 15 | Notebook §7; summary distributions, time history, correlations and predictor–target relationships, with observations |
-| Train/test and validation/CV split | 5 | Notebook §6; pre-2026 development, new 2026 holdout, four expanding windows with five-origin purges |
-| Missing data, scaling, encoding and feature engineering | 10 | No missing quotes after validation; no unnecessary imputation/encoding; backward-looking risk and market features; Ridge scaling only within fit folds |
-| Two distinct class-approved model types and meaningful tuning | 10 | Notebook §8; regularized linear regression (Ridge) and Random Forest; 9 Ridge penalties, 18 forest settings; common temporal CV and fixed seed |
-| Train/test performance, appropriate metrics/plots, discussion | 20 | Notebook §§9–11; RMSE, MAE, R², variance QLIKE, two baselines, CV selection, train/test comparison, time/scatter plots, interpretation and overfitting discussion |
+| Appropriate dataset, ≥500 observations, goal, cleaning | 10 | Notebook §§1–2; 4,631 development examples and 11 inputs; source audit, session calendar, finite/price/range checks; target definition |
+| Appropriate EDA and descriptive statistics | 15 | Notebook §4; summary distributions, time history, correlations and predictor–target relationships, with observations |
+| Train/test and validation/CV split | 5 | Notebook §3; pre-2026 development, new 2026 holdout, four expanding windows with five-origin purges |
+| Missing data, scaling, encoding and feature engineering | 10 | Notebook §§2–3; no missing quotes after validation; backward-looking market features; Ridge scaling only within fit folds |
+| Two distinct class-approved model types and meaningful tuning | 10 | Notebook §5; regularized linear regression (Ridge) and Random Forest; 9 Ridge penalties, 18 forest settings; common temporal CV and fixed seed |
+| Train/test performance, appropriate metrics/plots, discussion | 20 | Notebook §§6–9; RMSE, MAE, R², QLIKE, two baselines, train/test comparison, forecast plots, interpretation and overfitting discussion |
 | Creativity, quality and effort | 25 | Evidence includes justified target change, source repair, new-data evaluation, dependence-aware uncertainty, tests, reusable notebook functions and reproducibility; assessed by instructor |
 | Report/talk format and source links | 5 | Executed `.ipynb`, HTML export and data references complete; user records/submits the talk separately |
 
@@ -24,7 +24,7 @@ The instructor’s project PDF and eight-category rubric are the reference. This
 
 ## Submission contents
 
-Use the separate files in `submission/`; the assignment explicitly says not to ZIP files unless there are very many data files.
+Use the separate files in the repository; the assignment explicitly says not to ZIP files unless there are very many data files.
 
 1. `spy_risk_forecasting.ipynb`: all analysis, modeling, and plotting code, with saved outputs.
 2. `spy_risk_forecasting.html`: the required derived report.
@@ -39,13 +39,13 @@ The notebook does not execute project `.py` files or read precomputed JSON repor
 
 | Required step | Notebook evidence |
 |---|---|
-| 1. Dataset, prediction goal, cleaning | Sections 1–5; linked sources, calendar audit, valid-price/missingness checks; 4,631 development examples and 11 features |
-| 2. Brief EDA | Section 7; distributions, descriptive statistics, correlations and predictor–target scatter plots |
-| 3. Reproducible split, no test tuning | Section 6; deterministic dates, purged expanding folds, new 2026 holdout; seed 402 controls stochastic modeling |
-| 4. Appropriate feature engineering | Section 5; backward-looking returns, rolling risk, log transformations; no categorical inputs requiring encoding |
+| 1. Dataset, prediction goal, cleaning | Sections 1–2; linked sources, calendar audit, valid-price/missingness checks; 4,631 development examples and 11 features |
+| 2. Brief EDA | Section 4; distributions, descriptive statistics, correlations and predictor–target scatter plots |
+| 3. Reproducible split, no test tuning | Section 3; deterministic dates, purged expanding folds, new 2026 holdout; seed 402 controls stochastic modeling |
+| 4. Appropriate feature engineering | Section 2; backward-looking returns, rolling risk, log transformations; no categorical inputs requiring encoding |
 | 5. Training-only rescaling | Ridge pipeline fits StandardScaler within each training fold; forest does not need scaling |
-| 6. Two allowed models, meaningful tuning, selection | Section 8; regularized linear regression (Ridge), Random Forest; 9 and 18 configurations; selection by development CV RMSE |
-| 7. Test metrics and performance plots | Section 9; RMSE, MAE, R², QLIKE, baselines, training/test comparison, prediction and actual-vs-predicted plots |
-| 8. Results and implications | Sections 8–12; tuning plots, model comparison, dependence, overfitting, interpretation, limitations and conclusion |
+| 6. Two allowed models, meaningful tuning, selection | Section 5; regularized linear regression (Ridge), Random Forest; 9 and 18 configurations; selection by development CV RMSE |
+| 7. Test metrics and performance plots | Section 6; RMSE, MAE, R², QLIKE, baselines, training/test comparison, prediction and actual-vs-predicted plots |
+| 8. Results and implications | Sections 5–9; tuning plots, model comparison, dependence, overfitting, interpretation, limitations and conclusion |
 
 Numerical and categorical inputs are an ideal, not a mandatory mix. Random splitting is suggested only where appropriate; shuffling these overlapping future time-series labels would undermine the evaluation. The instructions permit multiple datasets and do not require Kaggle as the only source. Dataset eligibility was confirmed by the student; talk participation and final quality judgments remain outside code verification.
