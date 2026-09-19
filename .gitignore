@@ -1,0 +1,22 @@
+# Local runtimes, caches and editor files
+.venv/
+.cache/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+# Provider-owned price snapshots: download locally for reproduction.
+data/raw/*.csv
+reports/*.joblib
+# Course materials and the earlier exploratory notebook stay local.
+/Project1_*
+/DAT402_Project 1.*
+/DAT402_SPY_Initial_Analysis.*
+
+# Local course bundle includes third-party data snapshots.
+SPY_Project_Submission.zip
+
+submission/
+
+notebooks/*.csv
+notebooks/reports/
