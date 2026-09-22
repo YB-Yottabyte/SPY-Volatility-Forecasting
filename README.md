@@ -2,7 +2,7 @@
 
 <p align="center">Estimating how much SPY may move over the next five trading sessions.</p>
 
-<p align="center"><a href="spy_risk_forecasting.ipynb">Run the notebook</a> · <a href="reports/spy_risk_forecasting.html">Read the report</a> · <a href="graphs/">See all graphs</a></p>
+<p align="center"><a href="spy_risk_forecasting.ipynb">View the notebook</a> · <a href="reports/spy_risk_forecasting.html">Download the HTML report</a> · <a href="graphs/">See all graphs</a></p>
 
 ---
 
@@ -32,7 +32,7 @@ The target is annualized realized volatility over the next five NYSE sessions. I
 | Ridge Regression | 4.22 | 3.20 |
 | Random Forest | 4.29 | 3.45 |
 
-Errors are in annualized volatility percentage points. Random Forest was selected by cross-validation before the holdout was evaluated. Ridge had a slightly lower holdout error; the selected model was not changed after seeing that result. The [full report](reports/spy_risk_forecasting.html) shows the forecast plots, tuning results, and limitations.
+Errors are in annualized volatility percentage points. Random Forest was selected by cross-validation before the holdout was evaluated. Ridge had a slightly lower holdout error; the selected model was not changed after seeing that result. The [notebook](spy_risk_forecasting.ipynb) shows the forecast plots, tuning results, and limitations.
 
 ## What's in this repository
 
@@ -42,7 +42,7 @@ Errors are in annualized volatility percentage points. Random Forest was selecte
 | [Python runner](scripts/run_report.py) | Rebuilds the notebook, graphs, and HTML report |
 | [Graphs](graphs/) | Nine charts from the analysis |
 | [Data](data/) | Saved input CSVs for the source audit, development, and holdout |
-| [Report](reports/spy_risk_forecasting.html) | Browser-friendly version of the notebook |
+| [HTML report](reports/spy_risk_forecasting.html) | Download and open in a browser |
 | [Data notes](docs/data_card.md) | Sources, time periods, and limitations |
 
 The Kaggle CSV is used only to audit the starting data. The forecasting models use the saved market-price snapshots. All model and plotting code is in the notebook; the runner executes it from the repository root.
