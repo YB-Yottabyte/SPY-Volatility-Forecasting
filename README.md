@@ -91,4 +91,4 @@ The saved CSVs let the notebook run without a fresh data download.
 
 Five future daily returns give a noisy volatility estimate. Forecast outcomes overlap, and the holdout covers only part of 2026. Market data providers can revise historical prices. This is a study of risk forecasts, not a trading strategy.
 
-**Authors:** Sai Rithwik Kukunuri and Pranith Molakalapalli.
+**Authors:** Sai Rithwik Kukunuri
