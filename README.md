@@ -43,7 +43,6 @@ Errors are in annualized volatility percentage points. Random Forest was selecte
 | [Graphs](graphs/) | Nine charts from the analysis |
 | [Data](data/) | Saved input CSVs for the source audit, development, and holdout |
 | [HTML report](reports/spy_risk_forecasting.html) | Download and open in a browser |
-| [Data notes](docs/data_card.md) | Sources, time periods, and limitations |
 
 The Kaggle CSV is used only to audit the starting data. The forecasting models use the saved market-price snapshots. All model and plotting code is in the notebook; the runner executes it from the repository root.
 

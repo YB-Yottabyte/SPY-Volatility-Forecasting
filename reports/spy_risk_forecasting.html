@@ -8696,7 +8696,7 @@ $$RV_{t,5}=100\sqrt{\frac{252}{5}\sum_{j=1}^{5} r_{t+j}^{2}},\qquad r_t=\log(P_t
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="3.-Evaluation-Design-and-Preprocessing">3. Evaluation Design and Preprocessing<a class="anchor-link" href="#3.-Evaluation-Design-and-Preprocessing">¶</a></h3><p>All observations through 2025 are development data, including periods viewed in the earlier notebook. The new test begins <strong>January 2, 2026</strong>; its data were downloaded only after <code>docs/evaluation_protocol.json</code> recorded the target, feature set, selected models, baseline, and diagnostics.</p>
+<h3 id="3.-Evaluation-Design-and-Preprocessing">3. Evaluation Design and Preprocessing<a class="anchor-link" href="#3.-Evaluation-Design-and-Preprocessing">¶</a></h3><p>All observations through 2025 are development data, including periods viewed in the earlier notebook. The new test begins <strong>January 2, 2026</strong>; its data were downloaded after the target, features, models, baseline, and diagnostics had been decided.</p>
 <p>Four expanding-window folds each omit five forecast origins before validation, so training outcome windows end strictly before validation begins. Ridge fits feature scaling and log-response regression inside each fold; exponentiation keeps forecasts positive, while Random Forest fits volatility directly without scaling. All features are numeric, so encoding and imputation are unnecessary.</p>
 </div>
 </div>
