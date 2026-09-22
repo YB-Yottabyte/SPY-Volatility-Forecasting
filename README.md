@@ -4,8 +4,6 @@
 
 <p align="center"><a href="spy_risk_forecasting.ipynb">View the notebook</a> · <a href="reports/spy_risk_forecasting.html">Download the HTML report</a> · <a href="graphs/">See all graphs</a></p>
 
----
-
 <p align="center"><img src="graphs/07_test_predictions.png" alt="Actual five-session volatility compared with the Random Forest forecast and a recent-risk baseline" width="95%"></p>
 
 <p align="center"><em>Forecasts follow broad changes in risk, but sudden moves remain hard to predict.</em></p>
